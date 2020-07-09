@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div class="sessions">
+        <p> New User  has been Logged in  Successfully </p>
+        
+    </div>
+    
+    <div class="sessions-help">
+        <p>Users List </p>   
+    </div>
+
+    <div class="sessions">
+        <table>
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% @users.each do |user| %>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="sessions-help">
+        <p>Back to Home  <a href="/">Click here to Back</a>.</p>
+        
+    </div>
+
+</body>
+
+</html>
